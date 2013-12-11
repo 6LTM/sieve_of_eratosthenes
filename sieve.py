@@ -1,10 +1,14 @@
 #!/usr/bin/env python
 
-import sys
+"""
+This little program calculates the prime number up to a
+given range using the "sieve of eratosthenes" algorithm.
 
-# Pseudo Code
-#primes = sieve [2..]
-#sieve (p : xs) = p : sieve [x | x <- xs. x 'mod' p > 0]
+it is called with "$: python sieve.py max_range"
+where "max_range" is an integer between 2 and 7900
+"""
+
+import sys
 
 
 def sieve(xs, primes=[]):
